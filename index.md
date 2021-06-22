@@ -1,37 +1,46 @@
-## Welcome to GitHub Pages
+# docker 笔记
 
-You can use the [editor on GitHub](https://github.com/fangxh2013/docker_notes/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+### Docker — 从入门到实践
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+点击[github地址](https://github.com/yeasy/docker_practice)
 
-### Markdown
+[github在线阅读](https://github.com/yeasy/docker_practice/blob/master/SUMMARY.md)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+[gitbook在线阅读](https://yeasy.gitbook.io/docker_practice/)
 
-```markdown
-Syntax highlighted code block
+[docker部署离线阅读方法](https://github.com/yeasy/docker_practice/wiki/%E7%A6%BB%E7%BA%BF%E9%98%85%E8%AF%BB%E5%8A%9F%E8%83%BD%E8%AF%A6%E8%A7%A3)
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+#### Vuepress 格式
 
-**Bold** and _Italic_ and `Code` text
+```shell
+docker pull ccr.ccs.tencentyun.com/dockerpracticesig/docker_practice:vuepress
 
-[Link](url) and ![Image](src)
+# 国内仓库
+docker run -it --rm -p 4000:80 ccr.ccs.tencentyun.com/dockerpracticesig/docker_practice:vuepress
+
+# docker hub
+#docker run -it --rm -p 4000:80 dockerpracticesig/docker_practice:vuepress
+
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+#### 或者：GitBook 格式
 
-### Jekyll Themes
+```shell
+docker pull ccr.ccs.tencentyun.com/dockerpracticesig/docker_practice
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/fangxh2013/docker_notes/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+# 国内仓库
+docker run -it --rm -p 4000:80 ccr.ccs.tencentyun.com/dockerpracticesig/docker_practice
 
-### Support or Contact
+# docker hub
+#docker run -it --rm -p 4000:80 dockerpracticesig/docker_practice
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+```
+
+#### 打开浏览器阅读
+
+打开浏览器，在地址栏输入 `127.0.0.1:4000` 即可开始阅读。
+
+
+
